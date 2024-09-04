@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDT TEST</title>
+    <link rel="stylesheet" href="./Css/oir.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+<body>
+    <!-- start Quiz button -->
+    <h2 style="text-align: center;color: white;font-size: 2.4rem;margin-top: 40px;">PICTURE PERCEPTION AND DESCRIPTION TEST</h2>
+    <div class="start_btn"><button>Start Test</button></div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Test</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>30 seconds</span> to observe the picture</div>
+            <div class="info">2. After 30 sec the picture will be removed.</div>
+            <div class="info">3. You have to start writing what you saw in image.</div>
+            <div class="info">4. Mention Gender, Mood, Age of the characters shown</div>
+            <div class="info">5. You'll have 4 minutes to write down your story.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Test</button>
+            <button  class="restart" onclick="todo()">Continue</button>
+            
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">PPDT TEST</div>
+           
+            <div class="time_line"></div>
+        </header>
+        <section >
+            <img id="myPicture" src="./Assets/1.jpg" style="height:300px;width:100%px;">
+            <div class="form-group" id="none">
+                <h2>Write down your story you have 4 minutes</h2>
+                <h2 id="message">Your Response was recorded referesh this page to give test again</h2>
+                
+                <textarea class="form-control" id="exampleFormControlTextarea3" rows="10" cols="72"></textarea>
+              </div>
+        
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Test!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Test</button>
+            <button class="quit">Quit Test</button>
+        </div>
+    </div>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="./Js/ppdt.js"></script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="./Js/ppdtimg.js"></script>
+</body>
+</html>
+</html>
